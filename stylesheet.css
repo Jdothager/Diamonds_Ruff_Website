@@ -1,0 +1,149 @@
+body {
+    font-size: x-large;
+    background-color: dimgrey;
+    /* image credit to: https://wallpaperscraft.com/download/surface_heart_joint_pattern_50750/1920x1080 */
+    background-image: url("images/surface_heart_joint_pattern_50750_1920x1080.jpg");
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+    margin: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #fefefe;
+}
+
+/* The navigation bar */
+.nav-bar {
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 700px;
+}
+
+    /* Links inside the nav-bar and footer */
+    .nav-bar ul, .footer-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #434746;
+    }
+
+    .nav-bar li, .footer-nav li {
+        display: inline;
+    }
+
+        .nav-bar li a, .footer-nav li a {
+            display: inline-block;
+            color: #fefefe;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+            .nav-bar li a:hover:not(.active), .footer-nav li a:hover:not(.active) {
+                background-color: #111111;
+                color: #fefefe;
+            }
+
+.active {
+    background-color: #f06277;
+}
+
+/* Header content */
+header {
+    min-width: 700px;
+}
+
+    header h1 {
+        font-size: 250%;
+        margin-top: 75px;
+        margin-bottom: 0;
+        text-align: center;
+        width: 80%;
+        min-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    header span {
+        border-radius: 5px;
+        padding: 0 10px;
+        background-color: #f7abae;
+    }
+
+    header img {
+        width: 25%;
+        height: auto;
+        min-width: 250px;
+        max-width: 400px;
+        margin: auto;
+        margin-top: -60px;
+        display: block;
+    }
+
+/* Main content */
+.main { 
+    display: block;
+}
+main {
+    width: 80%;
+    min-width: 700px;
+    margin-top: -60px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+    background-color: #f7abae;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    main h2 {
+        padding: 20px;
+    }
+
+.loc-hours {
+    width: 80%;
+    min-width: 700px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .loc-hours ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+.list-title {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.location, .hours {
+    display: inline;
+    width: 38%;
+    border-style: double;
+    border-color: #fefefe;
+    border-radius: 5px;
+    background-color: #434746;
+}
+
+.location {
+    float: left;
+}
+
+.hours {
+    float: right;
+}
+
+/* Footer*/
+footer {
+    width: 80%;
+    min-width: 700px;
+    margin: 20px auto 10px;
+    padding: 0 20px;
+    background-color: #434746;
+    border-radius: 5px;
+    font-size: medium;
+    text-align: center;
+}
