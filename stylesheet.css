@@ -10,6 +10,10 @@ body {
     color: #fefefe;
 }
 
+.material-icons {
+    vertical-align: -12%;
+}
+
 /* The navigation bar */
 .nav-bar {
     padding-top: 5px;
@@ -35,7 +39,7 @@ body {
         .nav-bar li a, .footer-nav li a {
             display: inline-block;
             color: #fefefe;
-            padding: 12px;
+            padding: 10px;
             text-decoration: none;
         }
 
@@ -102,6 +106,7 @@ main {
 
     main h2 {
         padding: 20px;
+        margin: 0;
         font-weight: 400;
         font-style: italic;
     }
@@ -126,6 +131,7 @@ main {
 
 .location, .hours {
     display: inline;
+    margin-top: 45px;
     width: 35%;
     border-style: double;
     border-color: #fefefe;
@@ -156,7 +162,7 @@ footer {
 .footer-address, .footer-phone, .copyright {
     float: left;
     width: 33.33333%;
-    margin: 0;                  
+    margin: 0;
 }
 
 .footer-address {
