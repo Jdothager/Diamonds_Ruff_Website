@@ -69,6 +69,7 @@ header {
         border-radius: 5px;
         padding: 0 10px;
         background-color: #f7abae;
+        background: rgba(247, 171, 174, 0.9);
     }
 
     header img {
@@ -82,9 +83,10 @@ header {
     }
 
 /* Main content */
-.main { 
+.main {
     display: block;
 }
+
 main {
     width: 80%;
     min-width: 700px;
@@ -93,16 +95,19 @@ main {
     margin-left: auto;
     padding: 0 20px;
     background-color: #f7abae;
+    background: rgba(247, 171, 174, 0.9);
     border-radius: 5px;
     text-align: center;
 }
 
     main h2 {
         padding: 20px;
+        font-weight: 400;
+        font-style: italic;
     }
 
 .loc-hours {
-    width: 80%;
+    width: 50%;
     min-width: 700px;
     height: 300px;
     margin-right: auto;
@@ -121,7 +126,7 @@ main {
 
 .location, .hours {
     display: inline;
-    width: 38%;
+    width: 35%;
     border-style: double;
     border-color: #fefefe;
     border-radius: 5px;
@@ -141,9 +146,27 @@ footer {
     width: 80%;
     min-width: 700px;
     margin: 20px auto 10px;
-    padding: 0 20px;
+    padding: 0 20px 30px;
     background-color: #434746;
     border-radius: 5px;
     font-size: medium;
     text-align: center;
+}
+
+.footer-address, .footer-phone, .copyright {
+    float: left;
+    width: 33.33333%;
+    margin: 0;                  
+}
+
+.footer-address {
+    text-align: left;
+}
+
+.footer-phone {
+    text-align: center;
+}
+
+.copyright {
+    text-align: right;
 }
