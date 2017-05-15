@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    min-width: 700px;
+    min-width: 830px;
 }
 
     /* Links inside the nav-bar and footer */
@@ -59,7 +59,7 @@ header {
 
     header h1 {
         font-size: 250%;
-        margin-top: 75px;
+        margin-top: 65px;
         margin-bottom: 0;
         text-align: center;
         width: 80%;
@@ -93,7 +93,7 @@ header {
 
 main {
     width: 80%;
-    min-width: 700px;
+    min-width: 830px;
     margin-top: -60px;
     margin-right: auto;
     margin-left: auto;
@@ -150,8 +150,8 @@ main {
 /* Footer*/
 footer {
     width: 80%;
-    min-width: 700px;
-    margin: 20px auto 10px;
+    min-width: 830px;
+    margin: 10px auto 10px;
     padding: 0 20px 30px;
     background-color: #434746;
     border-radius: 5px;
