@@ -3,12 +3,9 @@ body {
     background-color: lightgray;
     /* image credit to: http://backgroundlabs.com/item/light-grey-moroccan-pattern/ */
     background-image: url("images/light-grey-moroccan-pattern-3021.png");
-
-
     background-attachment: fixed;
     margin: 0;
     font-family: 'Cormorant Upright', serif;
-
     color: #fefefe;
 }
 
@@ -22,7 +19,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    min-width: 830px;
+    min-width: 870px;
 }
 
     /* Links inside the nav-bar and footer */
@@ -56,7 +53,7 @@ body {
 
 /* Header content */
 header {
-    min-width: 700px;
+    min-width: 870px;
 }
 
     header h1 {
@@ -65,7 +62,7 @@ header {
         margin-bottom: 0;
         text-align: center;
         width: 80%;
-        min-width: 700px;
+        min-width: 870px;
         margin-right: auto;
         margin-left: auto;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -76,12 +73,15 @@ header {
         padding: 0 50px 3px;
         background-color: #f7abae;
         background: rgba(247, 171, 174, 0.9);
+        /* border */
+        border-style: solid;
+        border-width: thin;
+        border-color: #fefefe;
     }
 
     header img {
         width: 25%;
         height: auto;
-        min-width: 250px;
         max-width: 400px;
         margin: auto;
         margin-top: -60px;
@@ -104,6 +104,10 @@ main {
     background: rgba(247, 171, 174, 0.9);
     border-radius: 5px;
     text-align: center;
+    /* border */
+    border-style: solid;
+    border-width: thin;
+    border-color: #fefefe;
 }
 
     main h2 {
@@ -113,7 +117,13 @@ main {
         font-style: italic;
     }
 
-.loc-hours {
+    main img {
+        border-style: solid;
+        border-width: thin;
+        border-color: #fefefe;
+    }
+
+.home-content, .stylist-content {
     width: 50%;
     min-width: 700px;
     height: 300px;
@@ -121,7 +131,7 @@ main {
     margin-left: auto;
 }
 
-    .loc-hours ul {
+    .home-content ul {
         list-style-type: none;
         padding: 0;
     }
@@ -147,6 +157,36 @@ main {
 
 .hours {
     float: right;
+}
+
+.stylists-content {
+    text-align: left;
+}
+
+.bio-name-left {
+    text-align: left;
+}
+
+.bio-name-right {
+    text-align: right;
+}
+
+.bio-left img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.bio-right img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.clearfloat {
+    clear: both;
 }
 
 /* Footer*/
