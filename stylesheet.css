@@ -1,6 +1,6 @@
 body {
     font-size: x-large;
-    background-color: lightgray;
+    background-color: #eaeaea;
     /* image credit to: http://backgroundlabs.com/item/light-grey-moroccan-pattern/ */
     background-image: url("images/light-grey-moroccan-pattern-3021.png");
     background-attachment: fixed;
@@ -10,7 +10,7 @@ body {
 }
 
 .material-icons {
-    vertical-align: -12%;
+    vertical-align: -14%;
 }
 
 /* The navigation bar */
@@ -45,6 +45,7 @@ body {
             .nav-bar li a:hover:not(.active), .footer-nav li a:hover:not(.active) {
                 background-color: #111111;
                 color: #fefefe;
+                cursor: pointer;
             }
 
 .active {
@@ -73,10 +74,7 @@ header {
         padding: 0 50px 3px;
         background-color: #f7abae;
         background: rgba(247, 171, 174, 0.9);
-        /* border */
-        border-style: solid;
-        border-width: thin;
-        border-color: #fefefe;
+        border: 1px solid #fefefe;
     }
 
     header img {
@@ -104,10 +102,7 @@ main {
     background: rgba(247, 171, 174, 0.9);
     border-radius: 5px;
     text-align: center;
-    /* border */
-    border-style: solid;
-    border-width: thin;
-    border-color: #fefefe;
+    border: 1px solid #fefefe;
 }
 
     main h2 {
@@ -115,12 +110,12 @@ main {
         margin: 0;
         font-weight: 400;
         font-style: italic;
+        color: #434746;
     }
 
     main img {
-        border-style: solid;
-        border-width: thin;
-        border-color: #fefefe;
+        border: 1px solid #fefefe;
+        border-radius: 5px;
     }
 
 .home-content, .stylist-content {
@@ -145,8 +140,7 @@ main {
     display: inline;
     margin-top: 45px;
     width: 35%;
-    border-style: double;
-    border-color: #fefefe;
+    border: 1px solid #fefefe;
     border-radius: 5px;
     background-color: #434746;
 }
@@ -159,30 +153,56 @@ main {
     float: right;
 }
 
-.stylists-content {
+.bio-left, .bio-name-left {
     text-align: left;
+    display: inline-block;
 }
 
-.bio-name-left {
-    text-align: left;
-}
-
-.bio-name-right {
+.bio-right, .bio-name-right {
     text-align: right;
+    display: inline-block;
+}
+
+.bio-name-left h3, .bio-name-right h3 {
+    color: #434746;
+    margin-bottom: 10px;
+}
+
+.appointment-btn {
+    background: linear-gradient(rgb(245, 177, 180) 5%, rgb(240, 98, 119) 100%) rgb(245, 177, 180);
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+    display: inline-block;
+    cursor: pointer;
+    color: #fefefe;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 22px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+    .appointment-btn:hover {
+        background: linear-gradient(rgb(240, 98, 119) 5%, rgb(245, 177, 180) 100%) rgb(240, 98, 119);
+    }
+
+.bio-left img, .bio-right img {
+    width: 200px;
+    height: auto;
+    margin: 20px 20px 10px 20px;
 }
 
 .bio-left img {
     float: left;
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
 }
 
 .bio-right img {
     float: right;
-    width: 200px;
-    height: auto;
-    margin-left: 20px;
+}
+
+.bio-left p, .bio-right p {
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0 50px 0;
 }
 
 .clearfloat {
