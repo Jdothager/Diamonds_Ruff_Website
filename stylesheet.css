@@ -39,18 +39,23 @@ body {
             display: inline-block;
             color: #fefefe;
             padding: 10px;
+            cursor: pointer;
             text-decoration: none;
         }
 
             .nav-bar li a:hover:not(.active), .footer-nav li a:hover:not(.active) {
                 background-color: #111111;
                 color: #fefefe;
-                cursor: pointer;
+                padding: 10px 30px;
             }
 
 .active {
     background-color: #f06277;
 }
+
+    .active:hover {
+        padding: 10px 30px;
+    }
 
 /* Header content */
 header {
@@ -163,10 +168,10 @@ main {
     display: inline-block;
 }
 
-.bio-name-left h3, .bio-name-right h3 {
-    color: #434746;
-    margin-bottom: 10px;
-}
+    .bio-name-left h3, .bio-name-right h3 {
+        color: #434746;
+        margin-bottom: 10px;
+    }
 
 .appointment-btn {
     background: linear-gradient(rgb(245, 177, 180) 5%, rgb(240, 98, 119) 100%) rgb(245, 177, 180);
@@ -219,6 +224,13 @@ footer {
     border-radius: 5px;
     font-size: large;
     text-align: center;
+    text-decoration: none;
+}
+
+.footer-logo {
+    color: #fefefe;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .footer-address, .footer-phone, .copyright {
