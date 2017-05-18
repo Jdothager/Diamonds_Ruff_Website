@@ -41,6 +41,7 @@ body {
             padding: 10px;
             cursor: pointer;
             text-decoration: none;
+            border-radius: 5px;
         }
 
             .nav-bar li a:hover:not(.active), .footer-nav li a:hover:not(.active) {
@@ -232,6 +233,12 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+    .footer-logo span:hover {
+        background-color: #111111;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
 
 .footer-address, .footer-phone, .copyright {
     float: left;
