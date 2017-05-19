@@ -19,7 +19,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    min-width: 870px;
+    min-width: 960px;
 }
 
     /* Links inside the nav-bar and footer */
@@ -38,7 +38,7 @@ body {
         .nav-bar li a, .footer-nav li a {
             display: inline-block;
             color: #fefefe;
-            padding: 10px;
+            padding: 10px 8px;
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
@@ -47,7 +47,7 @@ body {
             .nav-bar li a:hover:not(.active), .footer-nav li a:hover:not(.active) {
                 background-color: #111111;
                 color: #fefefe;
-                padding: 10px 30px;
+                padding: 10px 20px;
             }
 
 .active {
@@ -55,12 +55,38 @@ body {
 }
 
     .active:hover {
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
+
+.nav-logo {
+    padding: 10px 8px;
+}
+
+@media screen and (max-width: 980px){
+    .nav-bar li a {
+        font-size: medium;
+    }
+} 
+
+
+/*.share {
+    width: 15%;
+    text-align: right;
+    float: right;
+    margin-right: 20px;
+    padding: 10px 20px 10px 0;
+}
+
+.social {
+    float: right;
+    background-color: #434746;
+    margin-right: 20px;
+    padding: 10px;
+}*/
 
 /* Header content */
 header {
-    min-width: 870px;
+    min-width: 960px;
 }
 
     header h1 {
@@ -69,7 +95,7 @@ header {
         margin-bottom: 0;
         text-align: center;
         width: 80%;
-        min-width: 870px;
+        min-width: 960px;
         margin-right: auto;
         margin-left: auto;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -99,7 +125,7 @@ header {
 
 main {
     width: 80%;
-    min-width: 830px;
+    min-width: 960px;
     margin-top: -60px;
     margin-right: auto;
     margin-left: auto;
@@ -218,7 +244,7 @@ main {
 /* Footer*/
 footer {
     width: 80%;
-    min-width: 830px;
+    min-width: 960px;
     margin: 10px auto 10px;
     padding: 0 20px 30px;
     background-color: #434746;
