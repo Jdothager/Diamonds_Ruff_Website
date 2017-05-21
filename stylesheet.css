@@ -39,7 +39,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    min-width: 960px;
+    min-width: 625px;
 }
 
     /* Links inside the nav-bar and footer */
@@ -74,14 +74,25 @@ body {
 }
 
 .nav-logo {
-    padding: 10px 8px;
+    padding: 10px 0;
 }
 
-@media screen and (max-width: 980px) {
-    .nav-bar li a {
+@media only screen and (max-width: 980px) {
+    .nav-bar li {
         font-size: medium;
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .main {
+        width: 100%;
+    }
+
+    .nav-bar li a {
+        padding: 10px 0;
+    }
+}
+
 
 
 /*.share {
@@ -101,7 +112,7 @@ body {
 
 /* Header content */
 header {
-    min-width: 960px;
+    min-width: 625px;
 }
 
     header h1 {
@@ -110,7 +121,7 @@ header {
         margin-bottom: 0;
         text-align: center;
         width: 80%;
-        min-width: 960px;
+        min-width: 625px;
         margin-right: auto;
         margin-left: auto;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -140,7 +151,7 @@ header {
 
 main {
     width: 80%;
-    min-width: 960px;
+    min-width: 625px;
     margin-top: -60px;
     margin-right: auto;
     margin-left: auto;
@@ -167,7 +178,7 @@ main {
 
 .home-content, .services-content, .stylist-content {
     width: 50%;
-    min-width: 700px;
+    min-width: 400px;
     height: auto;
     min-height: 300px;
     margin-right: auto;
@@ -181,7 +192,6 @@ main {
     }
 
 /* home page main content*/
-
 .list-title {
     font-weight: bolder;
     text-decoration: underline;
@@ -205,15 +215,16 @@ main {
 }
 
 /* services page main content*/
-
+.services-content p {
+    padding: 30px;
+}
 /* accordian credit to https://www.w3schools.com/howto/howto_js_accordion.asp */
-
 button.accordion {
     background-color: #eee;
     color: #434746;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 80%;
     border: 1px solid #fefefe;
     text-align: left;
     outline: none;
@@ -251,7 +262,8 @@ div.panel {
 
 /* stylists page main content */
 .stylist-title-img {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
     height: auto;
 }
 
@@ -347,31 +359,17 @@ figcaption {
     width: 24.99999%;
 }
 
-/*@media only screen and (max-width: 700px){
+@media only screen and (max-width: 750px) {
     .gallery {
         width: 49.99999%;
         margin: 6px 0;
     }
 }
 
-@media only screen and (max-width: 500px){
-    .gallery {
-        width: 100%;
-    }
-}*/
-
-/*.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
-
-
 /* Footer*/
 footer {
     width: 80%;
-    min-width: 960px;
+    min-width: 625px;
     margin: 10px auto 10px;
     padding: 0 20px 30px;
     background-color: #434746;
