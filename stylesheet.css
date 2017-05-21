@@ -14,25 +14,24 @@ body {
     vertical-align: -14%;
 }
 
-/* "go to top" button credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */ 
+/* "go to top" button credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 50px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 5px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: 1px solid #fefefe;
-    outline: none; /* Remove outline */
-    background-color: #434746; /* Set a background color */
-    color: #fefefe; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #434746;
+    color: #fefefe;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-#myBtn:hover {
-    background-color: #111111; /* Add a dark-grey background on hover */
-}
+    #myBtn:hover {
+        background-color: #111111;
+    }
 
 /* The navigation bar */
 .nav-bar {
@@ -171,18 +170,22 @@ main {
         border-radius: 5px;
     }
 
-.home-content, .stylist-content {
+.home-content, .services-content, .stylist-content {
     width: 50%;
     min-width: 700px;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 30px;
 }
 
     .home-content ul {
         list-style-type: none;
         padding: 0;
     }
+
+/* home page main content*/
 
 .list-title {
     font-weight: bolder;
@@ -206,6 +209,52 @@ main {
     float: right;
 }
 
+/* services page main content*/
+
+/* accordian credit to https://www.w3schools.com/howto/howto_js_accordion.asp */
+
+button.accordion {
+    background-color: #eee;
+    color: #434746;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #fefefe;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+    button.accordion.active, button.accordion:hover {
+        background-color: #ddd;
+    }
+
+    button.accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+    button.accordion.active:after {
+        content: "\2212";
+    }
+
+div.panel {
+    padding: 0 18px;
+    background-color: #f7abae;
+    background: rgba(247, 171, 174, 0.9);
+    border-right: 1px solid #fefefe;
+    border-left: 1px solid #fefefe;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* stylists page main content */
 .stylist-title-img {
     width: 640px;
     height: auto;
@@ -267,7 +316,7 @@ main {
     clear: both;
 }
 
-
+/* gallery page main content */
 .figure {
     border: 1px solid #fefefe;
     border-radius: 5px;

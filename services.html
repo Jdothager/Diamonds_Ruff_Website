@@ -3,81 +3,116 @@
 <head>
     <meta charset="utf-8">
     <!-- image credit to http://www.favicon.cc/?action=icon&file_id=895867 -->
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!--CSS-->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <!--icons and font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?cp0z2c">-->
+
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant+Upright">
 
     <title>Diamonds in the Ruff!</title>
 </head>
 <body>
+
+    <!-- "go to top" button" credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="nav-bar">
         <ul>
-            <li>
-                <a href="index.html">
-                    <i class="material-icons">home</i> Home</a>
+            <li class="nav-logo">
+                Diamonds in the Ruff!
             </li>
             <li>
-                <a class="active" href="services.html">
-                    <i class="material-icons">pets</i> Services</a>
+                <a href="index.html" title="Home page">
+                    <i class="material-icons">home</i> Home
+                </a>
             </li>
             <li>
-                <a href="stylists.html">
-                    <i class="material-icons">content_cut</i> Stylists</a>
+                <a href="services.html" title="View services and packages" class="active">
+                    <i class="material-icons">pets</i> Services
+                </a>
             </li>
             <li>
-                <a href="appointment.html">
-                    <i class="material-icons">today</i> Schedule Appointment</a>
+                <a href="stylists.html" title="Read about our Amazing stylists">
+                    <i class="material-icons">content_cut</i> Stylists
+                </a>
             </li>
             <li>
-                <a href="gallery.html">
-                    <i class="material-icons">favorite</i> Gallery</a>
+                <a href="appointment.html" title="Make an appointment, today">
+                    <i class="material-icons">today</i> Schedule Appointment
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html" title="See delightful pictures of our friends">
+                    <i class="material-icons">favorite</i> Gallery
+                </a>
             </li>
         </ul>
     </nav>
     <header>
         <h1><span>Diamonds in the Ruff!</span></h1>
         <!-- image credit to https://pixabay.com/en/dog-love-friend-friendship-2166765/ -->
-        <img src="images/dog-2166765.svg" alt="Diamonds in the Ruff Dog Grooming Salon Logo" />
+        <img src="images/dog-2166765.svg" alt="Diamonds in the Ruff Dog Grooming Salon Logo" title="Diamonds in the Ruff Logo" />
     </header>
     <main class="main">
+        <hr />
+        <h2>Choose the perfect package to pamper your furry family member!</h2>
+        <hr />
+        <div class="services-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod tempus ipsum, vel aliquam ex fermentum a. Vivamus aliquam nisl diam, vel mollis justo convallis placerat. Sed vehicula ullamcorper aliquet. Vivamus porttitor sapien nisi, id molestie turpis ultricies at. Vivamus mauris libero, sodales dignissim eros vitae, tempus laoreet diam. Vivamus lacinia libero vitae augue feugiat, et maximus massa dictum.</p>
 
-        <!-- https://pixabay.com/en/site-website-under-construction-1561769/ -->
-        <img src="images/site-1561769_1280.jpg" style="width: 100%; height: auto;"/>
+            <!-- accordian credit to https://www.w3schools.com/howto/howto_js_accordion.asp -->
+            <button class="accordion">Gold Package</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis tempor ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
 
+            <button class="accordion">Platinum Package</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor risus quis enim faucibus commodo. Quisque ac interdum orci, a sodales neque. Suspendisse sed massa eu nisl eleifend placerat luctus ut risus. Duis fringilla dapibus lectus varius vehicula. Sed sed risus in orci molestie efficitur a quis tellus.</p>
+            </div>
 
+            <button class="accordion">Diamond Package</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel mauris non turpis mollis aliquam. Vestibulum nec nunc ultrices mi efficitur imperdiet. Proin vulputate eros sit amet nunc congue, vel dapibus nulla iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis id lorem volutpat sem gravida porttitor ac sed nunc. Pellentesque diam neque, placerat eu accumsan a, porta non magna. Vestibulum ultricies ex dictum, porta lectus eu, dictum ligula.</p>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div class="footer-nav">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" title="Home page">Home</a>
                 </li>
                 <li>
-                    <a class="active" href="services.html">Services</a>
+                    <a href="services.html" title="View services and packages" class="active">Services</a>
                 </li>
                 <li>
-                    <a href="stylists.html">Stylists</a>
+                    <a href="stylists.html" title="Read about our Amazing stylists">Stylists</a>
                 </li>
                 <li>
-                    <a href="appointment.html">Schedule Appointment</a>
+                    <a href="appointment.html" title="Make an appointment, today">Schedule Appointment</a>
                 </li>
                 <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.html" title="See delightful pictures of our friends">Gallery</a>
                 </li>
             </ul>
         </div>
         <div class="footer-content">
-            <a href="index.html" class="footer-logo">
-                <h2><span>Diamonds in the Ruff!</span></h2>
-            </a>
+            <h2>
+                <a href="index.html" class="footer-logo" title="Go to Home Page"><span>Diamonds in the Ruff!</span></a>
+            </h2>
             <hr />
             <p class="footer-address">2200 Mirabel Ave, Houston, TX</p>
             <p class="footer-phone">Call us: &nbsp;713.389.1237</p>
             <p class="copyright">&copy; 2017 - Jeremy Dothager</p>
         </div>
     </footer>
+    <!-- javascript -->
+    <script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>
