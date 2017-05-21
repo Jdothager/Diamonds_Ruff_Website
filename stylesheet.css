@@ -77,23 +77,6 @@ body {
     padding: 10px 0;
 }
 
-@media only screen and (max-width: 980px) {
-    .nav-bar li {
-        font-size: medium;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .main {
-        width: 100%;
-    }
-
-    .nav-bar li a {
-        padding: 10px 0;
-    }
-}
-
-
 
 /*.share {
     width: 15%;
@@ -177,7 +160,7 @@ main {
     }
 
 .home-content, .services-content, .stylist-content {
-    width: 50%;
+
     min-width: 400px;
     height: auto;
     min-height: 300px;
@@ -359,13 +342,6 @@ figcaption {
     width: 24.99999%;
 }
 
-@media only screen and (max-width: 750px) {
-    .gallery {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
 /* Footer*/
 footer {
     width: 80%;
@@ -407,4 +383,30 @@ footer {
 
 .copyright {
     text-align: right;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .nav-bar li {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main {
+        width: 100%;
+    }
+
+    .nav-bar li a {
+        padding: 10px 0;
+    }
+
+    .gallery {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
