@@ -201,13 +201,19 @@ main {
 .services-content p {
     padding: 30px;
 }
+
+.packages {
+    width: 80%;
+    display: inline-block;
+}
+
 /* accordian credit to https://www.w3schools.com/howto/howto_js_accordion.asp */
 button.accordion {
     background-color: #eee;
     color: #434746;
     cursor: pointer;
     padding: 18px;
-    width: 80%;
+    width: 100%;
     border: 1px solid #fefefe;
     text-align: left;
     outline: none;
@@ -241,7 +247,6 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
 
 /* stylists page main content */
 .stylist-title-img {
@@ -389,6 +394,10 @@ footer {
 @media only screen and (max-width: 980px) {
     .nav-bar li {
         font-size: medium;
+    }
+    
+    .packages {
+        width: 100%;
     }
 }
 
