@@ -9,10 +9,16 @@
     <!--icons and font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+    <!-- javascript -->
+    <script src="scripts.js" type="text/javascript"></script>
 
     <title>Diamonds in the Ruff!</title>
 </head>
 <body>
+
+    <!-- "go to top" button" credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="nav-bar">
         <ul>
             <li>
@@ -45,15 +51,84 @@
     <header>
         <h1><span>Diamonds in the Ruff!</span></h1>
         <!-- image credit to https://pixabay.com/en/dog-love-friend-friendship-2166765/ -->
-        <img src="images/dog-2166765.svg" alt="Diamonds in the Ruff Dog Grooming Salon Logo"  title="Diamonds in the Ruff Logo"/>
+        <img src="images/dog-2166765.svg" alt="Diamonds in the Ruff Dog Grooming Salon Logo" title="Diamonds in the Ruff Logo" />
     </header>
     <main class="main">
         <hr />
-        <h2>Your locally owned grooming salon. Come and see what all of the other dogs are barking about!</h2>
+        <h2>Check out some of our Diamond in the Ruff friends!</h2>
         <hr />
-        <div class="home-content">
-            
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://www.pexels.com/photo/adorable-animal-breed-canine-264206/ -->
+                <a target="_blank" href="images/gallery/pexels-photo-264206.jpeg">
+                    <img src="images/gallery/pexels-photo-264206-thumb.jpeg" alt="dog" title="Cutey McCuteFace" width="300" height="200" />
+                    <figcaption>Cutey McCuteFace</figcaption>
+                </a>
+            </div>
         </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/en/puppies-poodles-standard-poodles-2188648/ -->
+                <a target="_blank" href="https://pixabay.com/get/eb34b9072ef0093ed1534705fb094395e576e6d718ac10459cf5c27ba0e8b4b0/puppies-2188648_1920.jpg">
+                    <img src="images/gallery/puppies-2188648_640.jpg" alt="dog" title="Max and Finn" width="300" height="200" />
+                </a>
+                <figcaption>Max and Finn</figcaption>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/get/e835b00628f4023ed1534705fb094395e576e6d718ac10459cf5c27aa7e9b3bc/white-1019003_1920.jpg -->
+                <a target="_blank" href="https://pixabay.com/get/e835b00628f4023ed1534705fb094395e576e6d718ac10459cf5c27aa7e9b3bc/white-1019003_1920.jpg">
+                    <img src="images/gallery/white-1019003_640.jpg" alt="dog" title="Mimi" width="300" height="200" />
+                </a>
+                <figcaption>Mimi</figcaption>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/en/grooming-cat-pet-cute-fur-1018977/ -->
+                <a target="_blank" href="https://pixabay.com/get/e835b00721f3063ecd1f4006e04d4294e26ae3d110b412429cf2c37a/grooming-1018977.jpg">
+                    <img src="images/gallery/grooming-1018977_640.jpg" alt="cat" title="Sassafras" width="300" height="200" />
+                </a>
+                <figcaption>Sassafras</figcaption>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/en/dog-puppy-bath-water-dara-237192/ -->
+                <a target="_blank" href="https://pixabay.com/get/eb36b60e21f61c22d9584518a3494590e273e0d404b0154890f3c270a2eab2/dog-237192_1920.jpg">
+                    <img src="images/gallery/dog-237192_640.jpg" alt="dog" title="Dara" width="300" height="200" />
+                </a>
+                <figcaption>Dara</figcaption>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/en/pomeranian-dog-pet-canine-cute-1541800/ -->
+                <a target="_blank" href="https://pixabay.com/get/e830b50e20f4013ed1534705fb094395e576e6d718ac10459cf5c27aaeeeb1bd/pomeranian-1541800_1920.jpg">
+                    <img src="images/gallery/pomeranian-1541800_640.jpg" alt="dog" title="Foxy" width="300" height="200" />
+                </a>
+                <figcaption>Foxy</figcaption>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="figure">
+                <!-- image credit to https://pixabay.com/en/dog-white-house-portuguese-water-dog-742012/ -->
+                <a target="_blank" href="https://pixabay.com/get/ee31b30f29f61c22d9584518a3494590e273e0d404b0154890f3c270a0e9bd/dog-742012_1920.jpg">
+                    <img src="images/gallery/dog-742012_640.jpg" alt="dog" title="Bo" width="300" height="200" />
+                </a>
+                <figcaption>Bo</figcaption>
+            </div>
+        </div>
+
+        <br class="clearfloat" />
     </main>
     <footer>
         <div class="footer-nav">
@@ -76,9 +151,9 @@
             </ul>
         </div>
         <div class="footer-content">
-            <a href="index.html" class="footer-logo" title="Go to Home Page">
-                <h2><span>Diamonds in the Ruff!</span></h2>
-            </a>
+            <h2>
+                <a href="index.html" class="footer-logo" title="Go to Home Page"><span>Diamonds in the Ruff!</span></a>
+            </h2>
             <hr />
             <p class="footer-address">2200 Mirabel Ave, Houston, TX</p>
             <p class="footer-phone">Call us: &nbsp;713.389.1237</p>

@@ -7,10 +7,31 @@ body {
     margin: 0;
     font-family: 'Cormorant Upright', serif;
     color: #fefefe;
+    cursor: default;
 }
 
 .material-icons {
     vertical-align: -14%;
+}
+
+/* "go to top" button credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */ 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid #fefefe;
+    outline: none; /* Remove outline */
+    background-color: #434746; /* Set a background color */
+    color: #fefefe; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #111111; /* Add a dark-grey background on hover */
 }
 
 /* The navigation bar */
@@ -62,11 +83,11 @@ body {
     padding: 10px 8px;
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 980px) {
     .nav-bar li a {
         font-size: medium;
     }
-} 
+}
 
 
 /*.share {
@@ -185,6 +206,11 @@ main {
     float: right;
 }
 
+.stylist-title-img {
+    width: 640px;
+    height: auto;
+}
+
 .bio-left, .bio-name-left {
     text-align: left;
     display: inline-block;
@@ -240,6 +266,64 @@ main {
 .clearfloat {
     clear: both;
 }
+
+
+.figure {
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+}
+
+    .figure:hover {
+        border: 1px solid #f06277;
+        border-radius: 5px;
+        background-color: #f06277;
+    }
+
+    .figure a {
+        text-decoration: none;
+        color: #fefefe;
+    }
+
+    .figure img {
+        width: 100%;
+        height: auto;
+    }
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    padding: 20px 10px 30px;
+    float: left;
+    width: 24.99999%;
+}
+
+/*@media only screen and (max-width: 700px){
+    .gallery {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .gallery {
+        width: 100%;
+    }
+}*/
+
+/*.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+
 
 /* Footer*/
 footer {

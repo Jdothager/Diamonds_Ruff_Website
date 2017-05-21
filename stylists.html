@@ -9,10 +9,16 @@
     <!--icons and font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+    <!-- javascript -->
+    <script src="scripts.js" type="text/javascript"></script>
 
     <title>Diamonds in the Ruff!</title>
 </head>
 <body>
+
+    <!-- "go to top" button" credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="nav-bar">
         <ul>
             <li>
@@ -51,7 +57,7 @@
         <hr />
         <h2>Meet our Amazing sylists!</h2>
         <hr />
-        <img src="images/grooming-1018980_640.jpg" alt="Our great sylists at work" title="Our great sylists at work"/>
+        <img src="images/grooming-1018980_640.jpg" alt="Our great sylists at work" title="Our great sylists at work" class="stylist-title-img"/>
         <hr />
         <div class="stylists-content">
             <div class="bio-left">
@@ -117,9 +123,9 @@
             </ul>
         </div>
         <div class="footer-content">
-            <a href="index.html" class="footer-logo" title="Go to Home Page">
-                <h2><span>Diamonds in the Ruff!</span></h2>
-            </a>
+            <h2>
+                <a href="index.html" class="footer-logo" title="Go to Home Page"><span>Diamonds in the Ruff!</span></a>
+            </h2>
             <hr />
             <p class="footer-address">2200 Mirabel Ave, Houston, TX</p>
             <p class="footer-phone">Call us: &nbsp;713.389.1237</p>
