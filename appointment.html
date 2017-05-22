@@ -15,33 +15,40 @@
 <body>
     <!-- "go to top" button" credit to https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- share button -->
+    <div id="share" title="Like us on Facebook!">
+        <a href="https://www.facebook.com/">
+            <div>Share</div>
+            <img src="images/like-button-2015-06.png" alt="Facebook like logo" title="Like us on Facebook!" />
+        </a>
+    </div>
     <nav class="nav-bar">
         <ul>
             <li class="nav-logo">
                 Diamonds in the Ruff!
             </li>
             <li>
-                <a href="index.html">
+                <a href="index.html" title="Home page">
                     <i class="material-icons">home</i> Home
                 </a>
             </li>
             <li>
-                <a href="services.html">
+                <a href="services.html" title="View services and packages">
                     <i class="material-icons">pets</i> Services
                 </a>
             </li>
             <li>
-                <a href="stylists.html">
+                <a href="stylists.html" title="Read about our Amazing stylists">
                     <i class="material-icons">content_cut</i> Stylists
                 </a>
             </li>
             <li>
-                <a href="appointment.html" class="active">
+                <a href="appointment.html" title="Make an appointment, today" class="active">
                     <i class="material-icons">today</i> Schedule Appointment
                 </a>
             </li>
             <li>
-                <a href="gallery.html">
+                <a href="gallery.html" title="See delightful pictures of our friends">
                     <i class="material-icons">favorite</i> Gallery
                 </a>
             </li>
@@ -52,11 +59,77 @@
         <!-- image credit to https://pixabay.com/en/dog-love-friend-friendship-2166765/ -->
         <img src="images/dog-2166765.svg" alt="Diamonds in the Ruff Dog Grooming Salon Logo" title="Diamonds in the Ruff Logo" />
     </header>
-    <main class="main">
-
-        <!-- https://pixabay.com/en/site-website-under-construction-1561769/ -->
-        <img src="images/site-1561769_1280.jpg" alt="under construction" title="Under Construction" style="width: 100%; height: auto;" />
-
+    <main class="main" id="appoint-anchor">
+        <hr />
+        <h2>Your locally owned grooming salon. Come and see what all of the other dogs are barking about!</h2>
+        <hr />
+        <div class="appoint-content">
+            <p>Please just fill out this information and we can get you a spot reserved!</p>
+            <!-- action and method attribute would be indicated in the form tag in Live version -->
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Owner's Name:</label>
+                            <input type="text" name="owner-name" class="form-field" placeholder="Owner" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Pet's Name:</label>
+                            <input type="text" name="dog-name" class="form-field" placeholder="Lassie" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone Number:</label>
+                            <input type="tel" name="phone" class="form-field" placeholder="(555) 555-5555" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Date:</label>
+                            <input type="date" name="date" class="form-field" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Time:</label>
+                            <select name="time" class="form-field">
+                                <option>...</option>
+                                <option value="first">8am - 12pm</option>
+                                <option value="second">12pm - 4pm</option>
+                                <option value="third">4pm - 8pm</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Perfered Stylist:</label>
+                            <select name="stylist" class="form-field">
+                                <option value="any">First Available</option>
+                                <option value="BeckyRiley">Becky Riley</option>
+                                <option value="ChristineBailey">Christine Bailey</option>
+                                <option value="JaredLambert">Jared Lambert</option>
+                                <option value="StacyAndrews">Stacy Andrews</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Additional Comments:</label>
+                            <textarea name="comments" class="form-field" rows="10" cols="30" placeholder="Please tell us anything we need to know in order to give you and your pet the best service possible."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- onclick alert for mockup -->
+                            <input type="submit" class="appointment-btn" onclick="alert('Your appointment has been scheduled. We look forward to seeing you!')" /> &nbsp;<input type="reset" class="appointment-btn" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
     </main>
     <footer>

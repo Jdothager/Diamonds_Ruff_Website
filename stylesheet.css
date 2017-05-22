@@ -25,12 +25,43 @@ body {
     background-color: #434746;
     color: #fefefe;
     cursor: pointer;
-    padding: 15px;
+    padding: 17px;
     border-radius: 5px;
+    font-family: 'Cormorant Upright', serif;
+    font-size: x-large;
 }
 
     #myBtn:hover {
         background-color: #111111;
+    }
+
+#share {
+    position: fixed;
+    bottom: 50px;
+    left: 5px;
+    z-index: 99;
+    border: 1px solid #fefefe;
+    background-color: #434746;
+    color: #fefefe;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+    #share:hover {
+        background-color: #111111;
+    }
+
+    #share a {
+        text-decoration: none;
+        color: #fefefe;
+    }
+
+    #share img {
+        width: 60px;
+        height: auto;
     }
 
 /* The navigation bar */
@@ -143,7 +174,7 @@ main {
         border-radius: 5px;
     }
 
-.home-content, .services-content, .stylist-content{
+.home-content, .services-content, .stylist-content, .appoint-content {
     min-width: 400px;
     height: auto;
     min-height: 300px;
@@ -292,6 +323,32 @@ div.panel {
 
 .clearfloat {
     clear: both;
+}
+
+/* appointment page main content */
+table {
+    display: inline-block;
+}
+
+td {
+    min-width: 600px;
+    padding: 5px 0;
+}
+
+    td .appointment-btn {
+        margin: 20px;
+    }
+
+.form-field {
+    font-family: 'Cormorant Upright', serif;
+    font-weight: bold;
+    font-size: x-large;
+    float: right;
+    width: 60%;
+}
+
+label {
+    float: left;
 }
 
 /* gallery page main content */
